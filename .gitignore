@@ -1,32 +1,32 @@
-# Prerequisites
-*.d
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+#include <iostream>
+using namespace std;
 
-# Precompiled Headers
-*.gch
-*.pch
+int main ()
+{
+	int number{0};
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+	cout << " Enter a number between one and five: ";
 
-# Fortran module files
-*.mod
-*.smod
+	cin >> number;
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+	if (number == 1){
+        cout << "The number you entered is one: ";
+	}
+	else if (number == 2){
+        cout << "The number you entered is two: ";
+	}
+	else if (number == 3){
+        cout << "The number you entered is three: ";
+	}
+	else if (number == 4){
+        cout << "The number you entered is four: ";
+	}
+	else if (number == 5){
+        cout << "The number you entered is five: ";
+	}
+	else if (number >5) {
+        cout << "You didn't follow directions: ";
+        }
+    return 0;
+    }
